@@ -27,17 +27,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   } else {
     $newpass = test_input($_POST["newpass"]);
     if ($currPass == $newpass) {
-      $newpassErr = "New password cannot match with previou password.";
+      $newpassErr = "New password cannot match with previous password.";
       $newpass ="";
     }
   }
 
   if (empty($_POST["retypedpass"])) {
-    $retypedpassErr = "Type new password.";
+    $retypedpassErr = "Re-type new password.";
   } else {
     $retypedpass = test_input($_POST["retypedpass"]);
     if ($retypedpass != $newpass) {
-      $retypedpassErr = "New password didn't match.";
+      $retypedpassErr = "Doesn't maatch with new password.Type again.";
       $retypedpass ="";
     }
   }
@@ -56,8 +56,9 @@ function test_input($data) {
 
 
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-   
-  Current Password: <input type="Password" name="currPass">
+  <fieldset>
+<legend><B>CHANGE PASSWORD</B></legend><div style="float: left; text-align: left;">  
+Current Password: <input type="Password" name="currPass">
   <span class="error"> <?php echo $currPassErr;?></span>
   <br><br>
   New Password: <input type="Password" name="newpass">
@@ -67,10 +68,9 @@ function test_input($data) {
   <span class="error"> <?php echo $retypedpassErr;?></span>
   <br><br>
   <input type="submit" name="submit" value="Submit">
-   
- 
-
+</fieldset>
 </form>
+
 <p><b>Your Result:</b></p>
 <?php
 echo $currPass;

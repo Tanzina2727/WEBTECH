@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       $username ="";
     }
     else if (strlen($username)<2) {
-      $userNameErr = "At least two characters needed";
+      $userNameErr = "Must contain at least two characters";
       $username ="";
     }
   }
@@ -51,16 +51,19 @@ function test_input($data) {
 
 
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-   
+   <fieldset>
+   <legend>LOGIN</legend>
   User Name: <input type="text" name="username">
   <span class="error"> <?php echo $userNameErr;?></span>
   <br><br>
   Password: <input type="Password" name="Password">
   <span class="error"> <?php echo $passErr;?></span>
   <br><br>
+  <input type="checkbox" name="remember"> Remember me <br>
+  <hr>
   <input type="submit" name="submit" value="Submit">
   <a href="">Forgot Password?</a>
- 
+  </fieldset>
 
 </form>
 <p><b>Your Result:</b></p>

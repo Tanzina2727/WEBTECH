@@ -1,0 +1,175 @@
+.btn {
+    justify-content: center;
+    background-color: rgb(107, 102, 96);
+    border: none;
+    color: rgb(246, 242, 242);
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 15px ;
+    
+  }
+  .btn:hover {
+    background-color: RoyalBlue;
+  }
+   
+  .choosebutton{
+    margin-left: 90px;
+    width:200px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 15px ;
+    padding: 12px 16px;
+    background-color: rgb(82, 87, 93);
+    color: rgb(251, 248, 248);
+}
+.choosebutton:hover {
+    background-color: rgb(56, 67, 228);
+  }
+
+.banner{
+    
+    background-image: url("resources/background.png");
+    background-size: cover;
+
+
+   
+}
+.ban{
+    
+    background-color: whitesmoke;
+}
+.right{
+	float: right;
+	margin-right: 50px;
+}
+.navbar{
+    width: 80%;
+    margin: auto;
+    padding: 45px 0;
+    display: flex;
+    align-items:baseline;
+    justify-content: space-between;
+}
+.registration{  
+    width: 382px;  
+    overflow: hidden;  
+    margin: auto;  
+    margin: 20 0 0 0px;  
+    padding: 60px;  
+    background: whitesmoke; 
+    border-radius: 15px ; 
+    justify-content: center;
+      
+}
+label{  
+    color: black;  
+    font-size: 20px;
+
+} 
+legend{
+    font-size: 23px;
+    
+}
+#name{  
+    width: 300px;  
+    height: 30px;  
+    border-radius: 2%; 
+    border-radius: 3px;  
+    padding-left: 8px;  
+} 
+#email{  
+    width: 300px;  
+    height: 30px;  
+    border-radius: 2%;
+    border-radius: 3px;  
+    padding-left: 8px;  
+      
+}   
+#password{  
+    width: 300px;  
+    height: 30px;  
+    border-radius: 2%;
+    border-radius: 3px;  
+    padding-left: 8px;  
+      
+}  
+
+#confirm_password{  
+    width: 300px;  
+    height: 30px;  
+    border-radius: 2%;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+
+}
+
+input{
+      
+    border-radius: 2%;  
+    border-radius: 3px;  
+    padding-left: 8px;
+}
+.login{  
+    width: 382px;  
+    overflow: hidden;  
+    margin: auto;  
+    margin: 20 0 0 450px;  
+    padding: 80px;  
+    background: whitesmoke; 
+    border-radius: 15px ; 
+      
+}
+
+.div{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    background: rgb(219, 217, 217); 
+     
+      
+  }
+  .justLeft
+  {
+      float: left;
+  }
+  .justRight
+  {
+      float: right;
+  }
+  .textCenter
+  {
+      text-align: center;
+  }
+  .proPic
+  {
+      width:5%;
+  } 
+  .proPic1
+{
+	width:40%;
+}
+
+  .vertical-menu {
+    width: 200px;
+
+  }
+  
+  .vertical-menu a {
+    background-color: darkgrey;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+  }
+  
+  .vertical-menu a:hover {
+    background-color: #ccc;
+  }
+  
+  .vertical-menu a.active {
+    background-color: #04AA6D;
+    color: white;
+  }

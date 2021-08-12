@@ -1,0 +1,20 @@
+ .login{  
+    width: 382px;  
+    overflow: hidden;  
+    margin: auto;  
+    margin: 20 0 0 450px;  
+    padding: 80px;  
+    background: whitesmoke; 
+    border-radius: 15px ; 
+      
+}
+label{  
+    color: black;  
+    font-size: 25px;
+
+} 
+legend{
+    font-size: 23px;
+    
+}
+ 
